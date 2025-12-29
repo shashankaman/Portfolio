@@ -3,7 +3,7 @@
 Welcome to my personal **Data Analytics Portfolio Website**.  
 This website showcases my **real-world data analytics projects**, dashboards, and skills using tools like **Python, SQL, Power BI, and Excel**.
 
-🔗 **Live Website:** https://your-username.github.io/portfolio  
+🔗 **Live Website:** https://shashankaman.github.io/Portfolio/  
 📂 **Projects Repository:** https://github.com/your-username
 
 ---
