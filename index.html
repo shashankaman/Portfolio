@@ -1,213 +1,1022 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shashank Aman | Data Analyst & Power BI Consultant</title>
-  <meta name="description" content="Shashank Aman – Data Analyst, Power BI Consultant. Interactive dashboards, analytics projects, consulting-ready portfolio." />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <title>Shashank Aman | Data Analyst & Power BI Developer</title>
+
+  <meta name="author" content="Shashank Aman">
+
+  <meta name="keywords"
+    content="Data Analyst, Power BI Developer, SQL Developer, Business Intelligence, Dashboard Developer, Power BI Portfolio">
+
+  <meta name="description"
+    content="Shashank Aman - Data Analyst & Power BI Developer with 3+ years of experience in Power BI, SQL, DAX, Dashboard Development, KPI Reporting, and Business Analytics." />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
-    :root{
-      --bg:#0b0d0f;--card:#111418;--text:#e6eef6;--muted:#9aa5b1;--primary:#007acc;--accent:#ff7a59;--radius:14px;--max:1100px;
-    }
-    body.light{--bg:#f6f9fc;--card:#ffffff;--text:#0b1720;--muted:#4b5563}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto;background:var(--bg);color:var(--text)}
-    a{text-decoration:none;color:inherit}
-    .wrap{max-width:var(--max);margin:auto;padding:24px}
-    header{background:linear-gradient(135deg,rgba(0,0,0,.6),rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=60') center/cover;border-radius:var(--radius);padding:36px}
-    .top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-    .name{font-size:26px;font-weight:700}
-    .role{color:var(--muted)}
-    .btn{background:linear-gradient(135deg,var(--primary),#1e5faf);color:#fff;padding:12px 18px;border-radius:10px;font-weight:600}
-    .btn.out{background:transparent;border:1px solid rgba(255,255,255,.25)}
-    section{margin-top:40px}
-    h2{margin-bottom:16px;font-size:22px}
-    .card{background:var(--card);border-radius:var(--radius);padding:24px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-    .skill{padding:10px 16px;border-radius:20px;background:linear-gradient(135deg,var(--primary),var(--accent));font-size:13px;font-weight:600;display:inline-block}
-    .project{cursor:pointer;transition:.25s}
-    .project:hover{transform:translateY(-6px)}
-    footer{text-align:center;margin-top:60px;color:var(--muted);font-size:13px}
-    
-    .social-links {
-      display: flex;
-      gap: 16px;
-      margin-top: 14px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
-    .social-links a {
+    :root {
+      --bg: #0b1120;
+      --card: #121a2b;
+      --text: #f3f4f6;
+      --muted: #94a3b8;
+      --primary: #2563eb;
+      --secondary: #1e293b;
+      --border: rgba(255, 255, 255, 0.08);
+      --max-width: 1200px;
+      --radius: 22px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, Segoe UI, Roboto, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    /* NAVBAR */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(16px);
+      background: rgba(11, 17, 32, 0.8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 24px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .resume-btn {
+      background: var(--primary);
+      color: #fff !important;
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    .resume-btn:hover {
+      background: #1d4ed8;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 18px;
+    }
+
+    .hero-role {
+      color: #60a5fa;
       font-size: 22px;
-      color: #ffffff;
-      background: rgba(255,255,255,0.12);
-      padding: 10px;
-      border-radius: 50%;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 720px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 24px;
+      border-radius: 14px;
+      font-weight: 600;
       transition: 0.3s;
     }
 
-    .social-links a:hover {
+    .btn-primary {
       background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #111827;
+    }
+
+    .achievement-banner {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #0f172a;
+      color: #93c5fd;
+      font-weight: 600;
+    }
+
+    #achievements .about-card {
+      text-align: center;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 30px;
+      border: 1px solid var(--border);
+    }
+
+    /* PROFILE CARD */
+
+    .profile-card {
+      background: linear-gradient(145deg, #121a2b, #1c2740);
+      border-radius: 32px;
+      padding: 40px;
+      border: 1px solid var(--border);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      background: #2563eb33;
+      border-radius: 50%;
+      top: -70px;
+      right: -70px;
+      filter: blur(30px);
+    }
+
+    .profile-image {
+      width: 180px;
+      height: 180px;
+      margin: auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 24px;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-card h3 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .profile-card p {
+      margin-bottom: 24px;
+    }
+
+    .mini-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .mini-box {
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .mini-box h4 {
+      color: #60a5fa;
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    /* ABOUT */
+
+    .about-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 40px;
+      border: 1px solid var(--border);
+    }
+
+    /* SKILLS */
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .skill {
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      border-color: #2563eb;
       transform: translateY(-3px);
+    }
+
+    /* PROJECTS */
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: 0.35s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      border-color: #2563eb;
+      box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+    }
+
+    .project-image-wrapper {
+      height: 240px;
+      overflow: hidden;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .project-card:hover .project-image {
+      transform: scale(1.06);
+    }
+
+    .project-body {
+      padding: 26px;
+    }
+
+    .project-body h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .project-footer {
+      margin-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      color: #60a5fa;
+      font-size: 14px;
+    }
+
+    /* EXPERIENCE */
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .timeline-item {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 30px;
+      border-left: 4px solid #2563eb;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 6px;
+    }
+
+    .timeline-item span {
+      color: #60a5fa;
+      font-size: 14px;
+    }
+
+    .company-badge {
+      display: inline-block;
+      background: #1e293b;
+      color: #60a5fa;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .contact-card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-6px);
+      border-color: #2563eb;
+    }
+
+    .contact-card i {
+      font-size: 34px;
+      color: #60a5fa;
+      margin-bottom: 16px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:950px) {
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 46px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .profile-card {
+        max-width: 500px;
+        margin: auto;
+      }
+
     }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
 
-    <!-- HERO -->
-    <header>
-      <div class="top">
+  <!-- NAVBAR -->
+
+  <nav>
+    <div class="nav-inner">
+
+      <div class="logo">
+        Shashank Aman
+      </div>
+
+      <div class="nav-links">
+
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+
+        <a class="resume-btn" href="ResumeShashank.pdf" download>
+          Resume
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-grid">
+
+        <!-- LEFT -->
+
         <div>
-          <div class="name">Shashank Aman</div>
-          <div class="role">Data Analyst | Power BI & Analytics Consultant</div>
-        </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn" href="#projects">Projects</a>
-          <a class="btn out" href="ResumeShashank.pdf" download>Download Resume</a>
-          <a class="btn out" href="#contact">Contact</a>
-        </div>
-      </div>
-      <p style="max-width:640px;margin-top:18px;color:#dbe7f3">
-        I build <b>consulting-grade dashboards</b>, business insights and analytics solutions using <b>Power BI, SQL, Excel & Python</b>. My focus is on impact, clarity and decision-making.
-      </p>
-    </header>
 
-    <!-- ABOUT -->
-    <section id="about">
+          <h1>Shashank Aman</h1>
+
+          <div class="hero-role">
+            Data Analyst | Power BI Developer | Business Intelligence Professional
+          </div>
+
+          <div class="hero-role">
+            Power BI • SQL • DAX • KPI Reporting • Business Intelligence • Dashboard Development
+          </div>
+          <div class="achievement-banner">
+            🏅 HackerRank SQL Gold Badge (5★) | 3+ Years Experience in Data Analytics & BI Reporting
+          </div>
+
+          <p>
+            Data Analyst with 3+ years of experience delivering Power BI dashboards, SQL reporting solutions, KPI
+            tracking systems and business intelligence insights. Skilled in transforming complex datasets into
+            actionable decisions through data visualization, reporting automation and analytics.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-chart-line"></i>
+              View Projects
+            </a>
+
+            <a href="ResumeShashank.pdf" download class="btn btn-outline">
+              <i class="fas fa-download"></i>
+              Resume
+            </a>
+
+            <a href="https://www.linkedin.com/in/shashank-aman-533a21244" target="_blank" class="btn btn-outline">
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a href="https://github.com/shashankaman" target="_blank" class="btn btn-outline">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="profile-card">
+
+          <div class="profile-image">
+
+            <!-- PUT YOUR IMAGE NAME HERE -->
+            <img src="C:\Users\shash\OneDrive\Desktop\Photo.png" alt="Shashank Aman" />
+
+          </div>
+
+          <h3>Shashank Aman</h3>
+          <p>
+            📍 Darbhanga, Bihar | Open to Remote & Relocation</p>
+
+          <p>
+            3+ Years Experience in Data Analytics, Power BI Dashboard Development, SQL Reporting & Business
+            Intelligence.
+          </p>
+
+          <div class="mini-stats">
+
+            <div class="mini-box">
+              <h4>3+</h4>
+              <p>Years Experience</p>
+            </div>
+
+            <div class="mini-box">
+              <h4>10+</h4>
+              <p>Analytics Projects Built</p>
+            </div>
+
+            <div class="mini-box">
+              <h4>Power BI</h4>
+              <p>Dashboard Specialist</p>
+            </div>
+
+            <div class="mini-box">
+              <h4>SQL</h4>
+              <p>Analytics & Reporting</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container">
+
       <h2>About Me</h2>
-      <div class="card">
+
+      <div class="about-card">
+
         <p>
-          I am a <b>Data Analyst & Power BI Specialist</b> with <b>3+ years of hands-on experience</b> delivering analytics solutions that help businesses make faster, data-driven decisions. My work sits at the intersection of <b>data, business understanding, and visual storytelling</b>.
-        </p>
-        <p style="margin-top:12px">
-          I specialize in building <b>consulting-grade Power BI dashboards</b> with clean data models, <b>optimized DAX measures</b>, and clearly defined KPIs. I have worked on <b>Retail Sales, Revenue Performance, Operational metrics, and Business dashboards</b> used by managers and decision-makers.
-        </p>
-        <p style="margin-top:12px">
-          Across projects, I focus on <b>problem-first analytics</b>: understanding business questions, identifying the right metrics, and designing intuitive visuals that stakeholders trust. I have built multiple end-to-end analytics projects—from raw data cleaning to final executive dashboards.
-        </p>
-        <p style="margin-top:12px">
-          I am continuously strengthening my portfolio with real-world datasets and am actively seeking <b>remote Data Analyst / Power BI roles</b> where analytical thinking and strong dashboards can create measurable business impact.
+          Data Analyst with 3+ years of experience in Power BI, SQL, Reporting Automation and Business Intelligence.
+
+          Experienced in designing KPI dashboards, data models, SQL reporting solutions and executive-level analytics
+          reports. Skilled in transforming business requirements into actionable insights through interactive dashboards
+          and data visualization.
+
+          Passionate about solving business problems using data and enabling data-driven decision making through
+          scalable analytics solutions.
         </p>
       </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="card" style="display:flex;gap:12px;flex-wrap:wrap">
-        <span class="skill">Power BI</span>
-        <span class="skill">Tableau</span>
-        <span class="skill">DAX</span>
-        <span class="skill">SQL</span>
-        <span class="skill">Advanced Excel</span>
-        <span class="skill">Python (Pandas, Matplotlib, Seaborn, Analysis)</span>
-        <span class="skill">Data Modeling</span>
-        <span class="skill">Business Analytics</span>
-        <span class="skill">KPI Design</span>
-        <span class="skill">Data Cleaning</span>
-        <span class="skill">Visualization & Storytelling</span>
-        <span class="skill">Sentiment Analysis</span>
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <div class="container">
+
+      <h2>Technical Skills</h2>
+
+      <div class="about-card">
+
+        <div class="skills-grid">
+
+          <div class="skill">Power BI</div>
+          <div class="skill">Power BI Service</div>
+          <div class="skill">SQL</div>
+          <div class="skill">DAX</div>
+          <div class="skill">Power Query</div>
+          <div class="skill">Dashboard Development</div>
+          <div class="skill">Data Modeling</div>
+          <div class="skill">KPI Reporting</div>
+          <div class="skill">Advanced Excel</div>
+          <div class="skill">Business Intelligence</div>
+          <div class="skill">Data Cleaning</div>
+          <div class="skill">ETL Workflows</div>
+          <div class="skill">Python</div>
+          <div class="skill">Business Analytics</div>
+          <div class="skill">Stakeholder Reporting</div>
+          <div class="skill">Data Visualization</div>
+          <div class="skill">Reporting Automation</div>
+          <div class="skill">Analytical Thinking</div>
+          <div class="skill">Databricks</div>
+          <div class="skill">Apache Spark</div>
+          <div class="skill">Tableau</div>
+          <div class="skill">Microsoft Fabric</div>
+        </div>
 
       </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects & Case Studies (Live from GitHub)</h2>
-      <p style="color:var(--muted);margin-bottom:14px">
-        Each project below represents a real-world analytics problem. Click any project to view the full repository, datasets, dashboards and documentation.
-      </p>
-      <div class="grid" id="projectGrid"></div>
-      <div class="card" style="margin-top:24px">
-        <h3>How I Approach Projects</h3>
-        <ul style="margin-top:10px;line-height:1.7">
-          <li><b>Business Problem:</b> Understand stakeholder questions and success metrics</li>
-          <li><b>Data Preparation:</b> Clean, transform and model raw data</li>
-          <li><b>KPI Design:</b> Define meaningful and decision-oriented metrics</li>
-          <li><b>Dashboard Build:</b> Create intuitive Power BI visuals</li>
-          <li><b>Insights:</b> Highlight trends, risks and growth opportunities</li>
-        </ul>
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <div class="container">
+
+      <h2>Featured Projects</h2>
+
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+
+        <div class="project-card">
+          <a href="https://github.com/shashankaman/Sales-Dashboard" target="_blank">
+
+            <div class="project-image-wrapper">
+              <img src="sales-dashboard.png" class="project-image">
+            </div>
+
+            <div class="project-body">
+              <h3>Sales Dashboard</h3>
+              <p>
+                Interactive Power BI dashboard for sales performance, revenue analysis and KPI tracking.
+              </p>
+            </div>
+
+          </a>
+          <div class="project-footer">
+            <span>
+              <i class="fab fa-github"></i>
+              View Repository
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="project-card">
+          <a href="https://github.com/shashankaman/BCG-Sales-Profitability-Dashboard" target="_blank">
+
+            <div class="project-image-wrapper">
+              <img src="bcg-dashboard.png" class="project-image">
+            </div>
+
+            <div class="project-body">
+              <h3>BCG Sales Profitability Dashboard</h3>
+              <p>
+                Business profitability analysis with category performance and executive insights.
+              </p>
+            </div>
+
+          </a>
+          <div class="project-footer">
+            <span>
+              <i class="fab fa-github"></i>
+              View Repository
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="project-card">
+          <a href="https://github.com/shashankaman/Motorola-Sales-Dashboard" target="_blank">
+
+            <div class="project-image-wrapper">
+              <img src="motorola-dashboard.png" class="project-image">
+            </div>
+
+            <div class="project-body">
+              <h3>Motorola Sales Dashboard</h3>
+              <p>
+                Sales and product performance dashboard built using Power BI and DAX.
+              </p>
+            </div>
+
+          </a>
+          <div class="project-footer">
+            <span>
+              <i class="fab fa-github"></i>
+              View Repository
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+
+        <div class="project-card">
+          <a href="https://github.com/shashankaman/Blinkit-Dashboard" target="_blank">
+
+            <div class="project-image-wrapper">
+              <img src="blinkit-dashboard.png" class="project-image">
+            </div>
+
+            <div class="project-body">
+              <h3>Blinkit Dashboard</h3>
+              <p>
+                Business analytics dashboard covering orders, revenue and operational KPIs.
+              </p>
+            </div>
+
+          </a>
+          <div class="project-footer">
+            <span>
+              <i class="fab fa-github"></i>
+              View Repository
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+
+        <div class="project-card">
+          <a href="https://github.com/shashankaman/Smart-Healthcare-Insights" target="_blank">
+
+            <div class="project-image-wrapper">
+              <img src="healthcare-dashboard.png" class="project-image">
+            </div>
+
+            <div class="project-body">
+              <h3>Smart Healthcare Insights</h3>
+              <p>
+                Healthcare analytics dashboard focused on operational and patient insights.
+              </p>
+            </div>
+
+          </a>
+          <div class="project-footer">
+            <span>
+              <i class="fab fa-github"></i>
+              View Repository
+            </span>
+          </div>
+        </div>
+
+
       </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="card">
-        <!-- <p><b>Email:</b> shashankaman16@gmail.com</p> -->
 
-        <div class="social-links">
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/shashank-aman-533a21244/" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
+    </div>
 
-          <!-- GitHub -->
-          <a href="https://github.com/shashankaman" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
+  </section>
 
-          <!-- Gmail -->
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shashankaman16@gmail.com&su=Data%20Analytics%20Opportunity&body=Hi%20Shashank," target="_blank">
-            <i class="fas fa-envelope"></i>
-          </a>
+  <!-- EXPERIENCE -->
+
+  <section id="experience">
+
+    <div class="container">
+
+      <h2>Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+
+          <h4>
+            <span class="company-badge">Wipro</span>
+          </h4>
+          <h3>Data Analyst</h3>
+
+          <span>Wipro • May 2022 – Sep 2025</span>
+
+          <ul style="margin-top:12px;padding-left:20px;color:#94a3b8;">
+
+            <li>Developed interactive Power BI dashboards and KPI reporting solutions for business and operational
+              reporting.</li>
+
+            <li>Created DAX measures, Power Query transformations, and optimized data models.</li>
+
+            <li>Automated recurring reports and improved reporting efficiency.</li>
+
+            <li>Performed data validation, analysis, and business reporting using SQL, Excel, and Power BI.</li>
+
+            <li>Collaborated with stakeholders to deliver actionable business insights.</li>
+
+          </ul>
 
         </div>
-        <p style="margin-top:12px;color:var(--muted)">
-          i am open to remote, onsite, offsite roles, freelance dashboard projects, and analytics consulting opportunities.
-        </p>
+
+
+
+        <div class="timeline-item">
+          <h4>
+            <span class="company-badge">Labmentix</span>
+          </h4>
+
+
+          <h3>Data Analyst Intern</h3>
+
+          <span>Labmentix • Sep 2025 – Mar 2026</span>
+
+          <ul style="margin-top:12px;padding-left:20px;color:#94a3b8;">
+
+            <li>Developed and enhanced Power BI dashboards for analytics and reporting use cases.</li>
+
+            <li>Worked on KPI tracking, data preparation, and reporting automation.</li>
+
+            <li>Assisted in SQL-based data analysis and dashboard optimization.</li>
+
+            <li>Supported stakeholders through business-focused reporting solutions.</li>
+
+          </ul>
+
+        </div>
+
       </div>
-    </section>
 
-    <footer>
-      © 2025 Shashank Aman • Data Analytics Portfolio
-    </footer>
-  </div>
+    </div>
 
-<!-- 🔥 FINAL GITHUB FETCH LOGIC -->
-<script>
-  const USERNAME = "shashankaman";
-  const REQUIRED_TOPIC = "portfolio-project";
+  </section>
 
-  async function loadProjects() {
-    const res = await fetch(
-      `https://api.github.com/users/${USERNAME}/repos?per_page=100&sort=updated`,
-      { headers: { Accept: "application/vnd.github.mercy-preview+json" } }
-    );
+  <!--Achievement -->
 
-    const repos = await res.json();
-    const grid = document.getElementById("projectGrid");
+  <section id="achievements">
 
-    const projects = repos.filter(repo =>
-      !repo.fork &&
-      repo.topics &&
-      repo.topics.includes(REQUIRED_TOPIC)
-    ).slice(0,10);
+    <div class="container">
 
-    for (const repo of projects) {
-      const card = document.createElement("div");
-      card.className = "card project";
-      card.onclick = () => window.open(repo.html_url, "_blank");
+      <h2>Achievements</h2>
 
-      card.innerHTML = `
-        <h3>${repo.name.replace(/-/g," ")}</h3>
-        <p style="color:var(--muted)">
-          ${repo.description || "Analytics / Dashboard Project"}
+      <div class="about-card">
+
+        <h3>🏅 HackerRank SQL Gold Badge (5★)</h3>
+
+        <p>
+          Demonstrated proficiency in SQL including joins,
+          aggregations, subqueries, CTEs, window functions,
+          query optimization and analytical problem solving.
         </p>
-      `;
-      grid.appendChild(card);
-    }
-  }
 
-  loadProjects();
-</script>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Certificate -->
+
+  <section id="certifications">
+
+    <div class="container">
+
+      <h2>Certifications</h2>
+
+      <div class="about-card">
+
+        <div class="skills-grid">
+
+          <div class="skill">
+            🏅 HackerRank SQL Gold Badge (5★)
+          </div>
+
+          <div class="skill">
+            📊 Power BI Certification – HRD University By IIPCL with 74% Marks
+          </div>
+
+          <div class="skill">
+            📈 Deloitte Data Analytics Virtual Experience Program
+          </div>
+
+          <div class="skill">
+            🐍 Python for Data Analysis – Udemy
+          </div>
+
+          <div class="skill">
+            📊 Data Analytics Certification – LearnTube with 100% Assessment Score
+          </div>
+
+          <div class="skill">
+            📈 Advanced Data Analytics Certification – LearnTube with 100% Assessment Score
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+
+        <a href="mailto:shashankaman16@gmail.com" class="contact-card">
+
+          <i class="fas fa-envelope"></i>
+
+          <h3>Email</h3>
+
+          <p>shashankaman16@gmail.com</p>
+
+        </a>
+
+        <a href="https://www.linkedin.com/in/shashank-aman-533a21244" target="_blank" class="contact-card">
+
+          <i class="fab fa-linkedin"></i>
+
+          <h3>LinkedIn</h3>
+
+          <p>Connect Professionally</p>
+
+        </a>
+
+        <a href="https://github.com/shashankaman" target="_blank" class="contact-card">
+
+          <i class="fab fa-github"></i>
+
+          <h3>GitHub</h3>
+
+          <p>Projects & Repositories</p>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © <span id="year"></span> Shashank Aman • Data Analyst & Power BI Developern | Built with HTML, CSS & GitHub Pages
+
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 
 </body>
+
 </html>
-
-
-
-
-
-
