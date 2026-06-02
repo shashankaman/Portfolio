@@ -18,6 +18,16 @@ To work in a **data-driven organization** or as a **freelance/consulting data an
 
 ---
 
+## Achievements
+
+🏅 HackerRank SQL Gold Badge (5★)
+
+📊 Power BI Developer | Data Analyst
+
+💾 SQL | DAX | Power Query | Power BI
+
+---
+
 ## 🛠️ Skills & Tools
 
 - **Programming:** Python (Pandas, NumPy, Matplotlib, Seaborn)
